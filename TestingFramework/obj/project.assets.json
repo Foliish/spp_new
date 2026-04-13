@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\spp\\TestingFramework\\TestingFramework.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\TestingFramework.csproj",
       "projectName": "TestingFramework",
-      "projectPath": "C:\\Users\\user\\Desktop\\spp\\TestingFramework\\TestingFramework.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\TestingFramework.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\spp\\TestingFramework\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

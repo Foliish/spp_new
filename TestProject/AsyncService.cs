@@ -1,7 +1,10 @@
-﻿namespace TestProject
+﻿using TestingFramework.Attributes;
+
+namespace TestProject
 {
     public class AsyncService
     {
+        [Timeout(50)]
         public async Task<int> GetNumberAsync()
         {
             await Task.Delay(100);

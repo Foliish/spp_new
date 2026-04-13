@@ -18,7 +18,7 @@
       "TestingFramework/1.0.0": {
         "runtime": {
           "TestingFramework.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -26,7 +26,7 @@
       "TestProject/1.0.0": {
         "runtime": {
           "TestProject.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\spp\\spp_new\\SPP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB70C994-5424-496D-943F-05C43202EF9D}|SPP.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\spp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB70C994-5424-496D-943F-05C43202EF9D}|SPP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F16189-B280-44FB-984B-513D37B279A1}|..\\TestingFramework\\TestingFramework.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testingframework\\runner\\lab3runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F16189-B280-44FB-984B-513D37B279A1}|..\\TestingFramework\\TestingFramework.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testingframework\\runner\\customthreadpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F16189-B280-44FB-984B-513D37B279A1}|..\\TestingFramework\\TestingFramework.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testingframework\\runner\\lab2runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9A0BD-D632-4DB8-BAEF-717F1F498BD1}|..\\TestProject\\TestProject.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testproject\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25F9A0BD-D632-4DB8-BAEF-717F1F498BD1}|..\\TestProject\\TestProject.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testproject\\asyncservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F16189-B280-44FB-984B-513D37B279A1}|..\\TestingFramework\\TestingFramework.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testingframework\\attributes\\timeoutattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F16189-B280-44FB-984B-513D37B279A1}|..\\TestingFramework\\TestingFramework.csproj|c:\\users\\user\\desktop\\spp\\spp_new\\testingframework\\runner\\runner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lab3Runner.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\Lab3Runner.cs",
+              "RelativeDocumentMoniker": "..\\TestingFramework\\Runner\\Lab3Runner.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\Lab3Runner.cs",
+              "RelativeToolTip": "..\\TestingFramework\\Runner\\Lab3Runner.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:27:42.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomThreadPool.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\CustomThreadPool.cs",
+              "RelativeDocumentMoniker": "..\\TestingFramework\\Runner\\CustomThreadPool.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\CustomThreadPool.cs",
+              "RelativeToolTip": "..\\TestingFramework\\Runner\\CustomThreadPool.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwFYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:19:04.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AsyncService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestProject\\AsyncService.cs",
+              "RelativeDocumentMoniker": "..\\TestProject\\AsyncService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestProject\\AsyncService.cs",
+              "RelativeToolTip": "..\\TestProject\\AsyncService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:04:58.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestProject\\Calculator.cs",
+              "RelativeDocumentMoniker": "..\\TestProject\\Calculator.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestProject\\Calculator.cs",
+              "RelativeToolTip": "..\\TestProject\\Calculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:04:57.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TimeoutAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Attributes\\TimeoutAttribute.cs",
+              "RelativeDocumentMoniker": "..\\TestingFramework\\Attributes\\TimeoutAttribute.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Attributes\\TimeoutAttribute.cs",
+              "RelativeToolTip": "..\\TestingFramework\\Attributes\\TimeoutAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:58:30.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lab2Runner.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\Lab2Runner.cs",
+              "RelativeDocumentMoniker": "..\\TestingFramework\\Runner\\Lab2Runner.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\Lab2Runner.cs",
+              "RelativeToolTip": "..\\TestingFramework\\Runner\\Lab2Runner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:50:37.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Runner.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\Runner.cs",
+              "RelativeDocumentMoniker": "..\\TestingFramework\\Runner\\Runner.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\TestingFramework\\Runner\\Runner.cs",
+              "RelativeToolTip": "..\\TestingFramework\\Runner\\Runner.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:44:24.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\spp\\spp_new\\SPP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\spp\\spp_new\\SPP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:40:41.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

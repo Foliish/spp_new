@@ -21,3 +21,15 @@ C:\Users\user\Desktop\spp\TestProject\obj\Debug\net8.0\TestProject.dll
 C:\Users\user\Desktop\spp\TestProject\obj\Debug\net8.0\refint\TestProject.dll
 C:\Users\user\Desktop\spp\TestProject\obj\Debug\net8.0\TestProject.pdb
 C:\Users\user\Desktop\spp\TestProject\obj\Debug\net8.0\ref\TestProject.dll
+c:\Users\user\Desktop\spp\spp_new\TestProject\bin\Debug\net8.0\TestProject.deps.json
+c:\Users\user\Desktop\spp\spp_new\TestProject\bin\Debug\net8.0\TestProject.dll
+c:\Users\user\Desktop\spp\spp_new\TestProject\bin\Debug\net8.0\TestProject.pdb
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.AssemblyInfoInputs.cache
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.AssemblyInfo.cs
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.csproj.CoreCompileInputs.cache
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.sourcelink.json
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.dll
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\refint\TestProject.dll
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\TestProject.pdb
+c:\Users\user\Desktop\spp\spp_new\TestProject\obj\Debug\net8.0\ref\TestProject.dll
