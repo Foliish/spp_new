@@ -42,7 +42,7 @@ namespace TestingFramework.Runner
 
                     if (!testCases.Any())
                     {
-                        testTasks.Add(RunTest   (instance, method, beforeMethod, afterMethod, null, results, semaphore));
+                        testTasks.Add(RunTest(instance, method, beforeMethod, afterMethod, null, results, semaphore));
                     }
                     else
                     {
@@ -89,7 +89,7 @@ namespace TestingFramework.Runner
                     after?.Invoke(instance, null);
                 });
 
-                if (await Task.WhenAny(testTask, Task.Delay(timeout)) == testTask)
+                if (await Task.WhenAny(Task.Delay(timeout), testTask) == testTask)
                 {
                     results.Enqueue($"PASS: {method.Name}");
                 }

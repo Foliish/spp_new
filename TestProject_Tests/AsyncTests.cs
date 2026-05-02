@@ -33,6 +33,7 @@ namespace TestedProject.Tests
             Assert.AreEqual("hello", result);
         }
         [TestMethod]
+        [Timeout(50)]
         public async Task GetNumberAsyncFailTest()
         {
             var result = await service.GetNumberAsync();

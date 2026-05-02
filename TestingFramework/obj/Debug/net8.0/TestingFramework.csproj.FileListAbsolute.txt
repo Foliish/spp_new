@@ -33,3 +33,15 @@ c:\Users\user\Desktop\spp\spp_new\TestingFramework\obj\Debug\net8.0\TestingFrame
 c:\Users\user\Desktop\spp\spp_new\TestingFramework\obj\Debug\net8.0\refint\TestingFramework.dll
 c:\Users\user\Desktop\spp\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.pdb
 c:\Users\user\Desktop\spp\spp_new\TestingFramework\obj\Debug\net8.0\ref\TestingFramework.dll
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\bin\Debug\net8.0\TestingFramework.deps.json
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\bin\Debug\net8.0\TestingFramework.dll
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\bin\Debug\net8.0\TestingFramework.pdb
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.AssemblyInfo.cs
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.sourcelink.json
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.dll
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\refint\TestingFramework.dll
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\TestingFramework.pdb
+C:\Users\user\Desktop\spp_new\spp_new\TestingFramework\obj\Debug\net8.0\ref\TestingFramework.dll

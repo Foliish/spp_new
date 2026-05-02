@@ -1,4 +1,4 @@
-﻿using TestProject;
+using TestProject;
 using TestingFramework.Attributes;
 using TestingFramework.Assertions;
 
@@ -46,11 +46,32 @@ namespace TestProject.Tests
         }
 
         [TestMethod]
+        [Category("Math")]
+        [Priority(1)]
+        [Author("Admin")]
         public void MultiplyFailTest()
         {
             var result = calculator.Multiply(3, 4);
 
             Assert.Less(result, 5);
+        }
+
+        [TestMethod]
+        [Category("Dynamic")]
+        [Priority(2)]
+        [DynamicTestCase(nameof(GetDivideTestCases))]
+        public void DivideDynamicTest(int a, int b, int expected)
+        {
+            var result = calculator.Divide(a, b);
+            Assert.AreEqual(expected, result);
+        }
+
+        public static IEnumerable<object[]> GetDivideTestCases()
+        {
+            yield return new object[] { 10, 2, 5 };
+            yield return new object[] { 9, 3, 3 };
+            yield return new object[] { 20, 4, 5 };
+            yield return new object[] { -10, 2, -5 };
         }
     }
 }

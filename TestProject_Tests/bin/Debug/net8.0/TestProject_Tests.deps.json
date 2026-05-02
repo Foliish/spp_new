@@ -24,6 +24,9 @@
         }
       },
       "TestProject/1.0.0": {
+        "dependencies": {
+          "TestingFramework": "1.0.0"
+        },
         "runtime": {
           "TestProject.dll": {
             "assemblyVersion": "1.0.0.0",

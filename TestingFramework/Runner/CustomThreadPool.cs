@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,9 +34,13 @@ namespace TestingFramework.Runner
                 LogState("Pool Initialized");
             }
         }
+        public event EventHandler<string> StateChanged;
+        public event EventHandler<string> ErrorOccurred;
+
         private void LogState(string reason)
         {
-            Console.WriteLine($"[{DateTime.Now:HH:mm:ss.fff}] {reason,-20} | Workers: {_workers.Count} | Active: {_activeThreads} | Tasks in Queue: {_tasks.Count}");
+            string message = $"[{DateTime.Now:HH:mm:ss.fff}] {reason,-20} | Workers: {_workers.Count} | Active: {_activeThreads} | Tasks in Queue: {_tasks.Count}";
+            StateChanged?.Invoke(this, message);
         }
 
         public void Enqueue(Action task)
@@ -110,16 +114,13 @@ namespace TestingFramework.Runner
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine($"[ERROR] {ex.Message}");
+                        ErrorOccurred?.Invoke(this, $"[ERROR] {ex.Message}");
                     }
                     finally
                     {
-                        lock (_lock)
-                        {
-                            _activeThreads--;
-                            LogState("Task Finished");
-                            Monitor.PulseAll(_lock); 
-                        }
+                        _activeThreads--;
+                        LogState("Task Finished");
+                        
                     }
                 }
             }
@@ -138,10 +139,11 @@ namespace TestingFramework.Runner
 
             foreach (var worker in workersCopy)
             {
-                if (worker.IsAlive) worker.Join();
+                if (worker.IsAlive && worker.ManagedThreadId != Thread.CurrentThread.ManagedThreadId) 
+                    worker.Join();
             }
 
-            Console.WriteLine("Pool Disposed.");
+            StateChanged?.Invoke(this, "Pool Disposed.");
         }
     }
 }

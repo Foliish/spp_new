@@ -1,26 +1,25 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 using TestingFramework.Attributes;
 
 namespace TestingFramework.Runner
 {
-
-    public class Lab3Runner : IDisposable
+    public class Lab4Runner : IDisposable
     {
         private readonly CustomThreadPool _threadPool;
+        public CustomThreadPool ThreadPool => _threadPool;
         public int MaxDegreeOfParallelism { get; set; } = Environment.ProcessorCount;
 
-        public Lab3Runner(int minThreads = 2, int maxThreads = 5, int idleTimeoutMs = 3000)
+        public Lab4Runner(int minThreads = 2, int maxThreads = 5, int idleTimeoutMs = 3000)
         {
             _threadPool = new CustomThreadPool(minThreads, maxThreads, idleTimeoutMs);
         }
 
-        public async Task RunTests(IEnumerable<Type> testClasses)
+        public async Task RunTests(IEnumerable<Type> testClasses, Func<MethodInfo, bool> filter = null)
         {
             var results = new ConcurrentQueue<string>();
             var runTasks = new List<Task>();
@@ -34,8 +33,15 @@ namespace TestingFramework.Runner
 
                 foreach (var method in testMethods)
                 {
+                    if (filter != null && !filter(method))
+                        continue;
+
                     var testCases = method.GetCustomAttributes<TestCaseAttribute>();
-                    if (!testCases.Any())
+                    var dynamicTestCases = method.GetCustomAttributes<DynamicTestCaseAttribute>();
+                    
+                    bool hasParameters = testCases.Any() || dynamicTestCases.Any();
+
+                    if (!hasParameters)
                     {
                         runTasks.Add(EnqueueTest(instance, method, beforeMethod, afterMethod, null, results));
                     }
@@ -45,6 +51,19 @@ namespace TestingFramework.Runner
                         {
                             runTasks.Add(EnqueueTest(instance, method, beforeMethod, afterMethod, testCase.Parameters, results));
                         }
+
+                        foreach (var dynAttr in dynamicTestCases)
+                        {
+                            var sourceMethod = testClass.GetMethod(dynAttr.SourceMethodName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static | BindingFlags.Instance);
+                            if (sourceMethod != null)
+                            {
+                                var parametersList = (IEnumerable<object[]>)sourceMethod.Invoke(sourceMethod.IsStatic ? null : instance, null);
+                                foreach (var p in parametersList)
+                                {
+                                    runTasks.Add(EnqueueTest(instance, method, beforeMethod, afterMethod, p, results));
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -52,11 +71,15 @@ namespace TestingFramework.Runner
             await Task.WhenAll(runTasks);
 
             Console.WriteLine($"--- Wave Completed. Results processed: {results.Count} ---");
+            foreach (var res in results)
+            {
+                Console.WriteLine(res);
+            }
         }
 
         private Task EnqueueTest(object inst, MethodInfo m, MethodInfo b, MethodInfo a, object[] p, ConcurrentQueue<string> res)
         {
-            var tcs = new TaskCompletionSource<bool>();
+            var tcs = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
             var timeout = m.GetCustomAttribute<TimeoutAttribute>()?.Milliseconds ?? 50000;
 
             _threadPool.Enqueue(() =>
